@@ -59,7 +59,7 @@
 
         numpad {
             bindings = <
-&trans               &kp K_PLAY_PAUSE  &trans  &trans  &trans  &trans     &trans  &kp N1        &kp N2  &kp N3   &mt KP_DIVIDE ASTRK                               &kp CARET
+&trans               &kp K_PLAY_PAUSE  &trans  &trans  &trans  &trans     &trans  &kp N1        &kp N2  &kp N3   &mt KP_DIVIDE ASTRK                     &mt CARET BACKSPACE
 &trans  &mt C_VOLUME_DOWN C_VOLUME_UP  &trans  &trans  &trans  &trans     &trans  &kp N4        &kp N5  &kp N6  &mt KP_SUBTRACT PLUS  &mt RIGHT_PARENTHESIS LEFT_PARENTHESIS
 &trans                         &trans  &trans  &trans  &trans  &trans    &mt Y X  &kp N7        &kp N8  &kp N9            &kp PERIOD                               &kp EQUAL
                                                &trans  &trans  &trans     &trans  &trans  &kp NUMBER_0
