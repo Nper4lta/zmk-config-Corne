@@ -9,8 +9,8 @@
 #include <dt-bindings/zmk/keys.h>
 /{
 	macros {
-			rand_macros: randMacro {
-					label = "randMacro";
+			randMacro: randMacro {
+					label = "randMacros";
 					compatible = "zmk,behavior-macro";
 					#binding-cells = <0>;
 					bindings
