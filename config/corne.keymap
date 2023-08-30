@@ -11,7 +11,7 @@
 	behaviors {
 		copyTap: tap_dance_0 {
 			compatitble = "zmk,behavior-tap-dance";
-			label = "COPY_TAP"
+			label = "COPY_TAP";
 			#binding-cells = <0>;
 			tapping-terms-ms = <200>;
 			bindings = <&kp C>, <&copyMacro>, <&pasteMacro>;
