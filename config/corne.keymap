@@ -14,7 +14,7 @@
 			label = "COPY_TAP";
 			#binding-cells = <0>;
 			tapping-terms-ms = <200>;
-			bindings = <&kp C>, <&copyMacro>, <&pasteMacro>;
+			bindings = <&kp C>, <&kp LC(C)>, <&kp LC(V)>;
 			};
 		};
 };
