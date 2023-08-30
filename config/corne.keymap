@@ -7,16 +7,17 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
-/{
-	behaviors {
-		copyTap: tap_dance_0 {
-			compatitble = "zmk,behavior-tap-dance";
-			label = "COPY_TAP";
-			#binding-cells = <0>;
-			tapping-terms-ms = <200>;
-			bindings = <&kp C>, <&kp LC(C)>, <&kp LC(V)>;
-			};
-		};
+
+/ {
+    behaviors {
+        td0: tap_dance_0 {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TAP_DANCE_0";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&kp C>, <&kp LC(C)>, <&kp LC(V)>;
+        };
+    };
 };
 
 /{
@@ -88,7 +89,7 @@
             bindings = <
             &mt ESC TAB  &kp Q  &kp W     &kp E               &kp R        &kp T              &kp Y  &kp U      &kp I    &kp O      &kp P  &kp BSPC
          &lt 1 C_VOL_UP  &kp A  &kp S     &kp D               &kp F        &kp G              &kp H  &kp J      &kp K    &kp L   &kp SEMI   &kp SQT
-&mt LSHFT C_VOLUME_DOWN  &kp Z  &kp X     &copyTap              &kp V        &kp B              &kp N  &kp M  &kp COMMA  &kp DOT  &kp SLASH   &kp ESC
+&mt LSHFT C_VOLUME_DOWN  &kp Z  &kp X     &td0              &kp V        &kp B              &kp N  &kp M  &kp COMMA  &kp DOT  &kp SLASH   &kp ESC
                                        &kp LGUI  &lt 1 LEFT_CONTROL  &lt 3 SPACE    &mt ENTER SPACE  &lt 2 C_PP &kp RALT
             >;
         };
