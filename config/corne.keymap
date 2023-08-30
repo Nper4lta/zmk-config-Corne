@@ -11,7 +11,7 @@
 	macros {
 			rand_macros: randMacro {
 					label = "randMacro";
-					compatible = "zmk, behavior-macro";
+					compatible = "zmk,behavior-macro";
 					#binding-cells = <0>;
 					bindings
 							= <&macro_tap &kp QMARK &kp LS(B) &kp LS(A) &kp LS(K) &kp LS(A) &kp QMARK &kp P &kp E &kp R &kp N4 &kp L &kp T &kp A>
