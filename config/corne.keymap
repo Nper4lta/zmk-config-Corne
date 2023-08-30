@@ -14,7 +14,7 @@
 					compatible = "zmk, behavior-macro";
 					#binding-cells = <0>;
 					bindings
-							= <&macro_tap &kp EXCLAMATION &kp LS(B) &kp LS(A) &kp LS(K) &kp LS(A) &kp EXCLAMATION &kp P &kp E &kp R &kp N4 &kp L &kp T &kp A
+							= <&macro_tap &kp EXCLAMATION &kp LS(B) &kp LS(A) &kp LS(K) &kp LS(A) &kp EXCLAMATION &kp P &kp E &kp R &kp N4 &kp L &kp T &kp A>
 							;
 		};
 	};
