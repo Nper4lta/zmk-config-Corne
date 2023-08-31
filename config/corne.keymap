@@ -30,7 +30,7 @@
             label = "TAP_THE";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
-            bindings = <&kp T>, <&theMacro>;
+            bindings = <&kp T>, <&kp T &kp H &kp E>;
         };
     };
 };
