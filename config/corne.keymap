@@ -83,6 +83,7 @@
 	combos{
 		compatible = "zmk,combos";
 		COMBO(combo_something, &randMacro, 3, 0 1)
+		COMBO(easyThe, &theMacro, 0, 4 5)
 	};
 };
 
