@@ -25,14 +25,6 @@
             tapping-term-ms = <200>;
             bindings = <&kp C>, <&kp LG(C)>, <&kp LG(V)>;
         };
-
-	theTap: theDance {
-		compatible = "zmk,behavior-tap-dance";
-            	label = "THE_DANCE";
-            	#binding-cells = <0>;
-            	tapping-term-ms = <200>;
-            	bindings = <&kp t>, <&theMacro>;
-	};
     };
 };
 
@@ -46,8 +38,8 @@
 							= <&kp QMARK &kp LS(B) &kp LS(A) &kp LS(K) &kp LS(A) &kp QMARK &kp P &kp E &kp R &kp N4 &kp L &kp T &kp A>
 							;
 		};
-			theMacro: theMacro {
-					label = "THEMACRO";
+	theMacro: theMacro {
+			label = "THEMACRO";
 					compatible = "zmk,behavior-macro";
 					#binding-cells = <0>;
 					bindings
@@ -106,7 +98,7 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-            &mt ESC TAB  &kp Q  &kp W     &kp E               &kp R        &theTap              &kp Y  &kp U      &kp I    &kp O      &kp P  &kp BSPC
+            &mt ESC TAB  &kp Q  &kp W     &kp E               &kp R        &kp T              &kp Y  &kp U      &kp I    &kp O      &kp P  &kp BSPC
          &lt 1 C_VOL_UP  &kp A  &kp S     &kp D               &kp F        &kp G              &kp H  &kp J      &kp K    &kp L   &kp SEMI   &kp SQT
 &mt LSHFT C_VOLUME_DOWN  &kp Z  &kp X     &td0              &kp V        &kp B              &kp N  &kp M  &kp COMMA  &kp DOT  &kp SLASH   &kp ESC
                                        &kp LGUI  &lt 1 LEFT_CONTROL  &lt 3 SPACE    &mt ENTER SPACE  &lt 2 C_PP &kp RALT
