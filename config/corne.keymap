@@ -53,6 +53,14 @@
 							= <&kp T &kp H &kp E>
 							;
 		};
+	nrsMacro: nrsMacro {
+			label = "NRSMACRO";
+					compatible = "zmk,behavior-macro";
+					#binding-cells = <0>;
+					bindings
+							= <&kp n &kp p &kp N1 &kp N5 &kp N7 &kp AT &kp n &kp r &kp s &kp MINUS &kp p &kp r &kp o &kp j &kp e &kp c &kp t &kp DOT &kp h &kp u &kp m &kp b &kp b &kp o &kp l &kp d &kp t &kp DOT &kp e &kp d &kp u>
+							;
+		};
 	};
 };
 
@@ -91,6 +99,7 @@
 		compatible = "zmk,combos";
 		COMBO(combo_something, &randMacro, 3, 0 1)
 		COMBO(easyThe, &theMacro, 0, 4 5)
+		COMBO(login, &nrsMacro, 3, 14 15)
 	};
 };
 
