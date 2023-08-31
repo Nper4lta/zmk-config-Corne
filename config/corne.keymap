@@ -20,10 +20,10 @@
 
 				theTap: theDance {
 						compatible = "zmk,behavior-tap-dance";
-            label = "TAP_DANCE_0";
+            label = "THE_DANCE";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
-            bindings = <&kp t>, <&kp t &kp h &kp e>;
+            bindings = <&kp t>, <&theMacro>;
 				};
     };
 };
@@ -38,6 +38,13 @@
 							= <&kp QMARK &kp LS(B) &kp LS(A) &kp LS(K) &kp LS(A) &kp QMARK &kp P &kp E &kp R &kp N4 &kp L &kp T &kp A>
 							;
 		};
+			theMacro: theMacro {
+					label = "THEMACRO";
+					compatible = "zmk,behavior-macro";
+					#binding-cells = <0>;
+					bindings
+							= <&kp T &kp H &kp E>
+							;
 	};
 };
 
