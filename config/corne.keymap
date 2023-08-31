@@ -44,23 +44,23 @@
 					bindings
 							= <&kp QMARK &kp LS(B) &kp LS(A) &kp LS(K) &kp LS(A) &kp QMARK &kp P &kp E &kp R &kp N4 &kp L &kp T &kp A>
 							;
-		};
-	theMacro: theMacro {
-			label = "THEMACRO";
+			};
+			theMacro: theMacro {
+				label = "THEMACRO";
 					compatible = "zmk,behavior-macro";
 					#binding-cells = <0>;
 					bindings
 							= <&kp T &kp H &kp E>
 							;
-		};
-	nrsMacro: nrsMacro {
-			label = "NRSMACRO";
+			};
+			nrsMacro: nrsMacro {
+					label = "NRSMACRO";
 					compatible = "zmk,behavior-macro";
 					#binding-cells = <0>;
 					bindings
-							= <&kp n &kp p &kp N1 &kp N5 &kp N7 &kp AT &kp n &kp r &kp s &kp MINUS &kp p &kp r &kp o &kp j &kp e &kp c &kp t &kp DOT &kp h &kp u &kp m &kp b &kp b &kp o &kp l &kp d &kp t &kp DOT &kp e &kp d &kp u>
+							= <&kp n &kp p &kp N1 &kp N5 &kp N7>
 							;
-		};
+			};
 	};
 };
 
