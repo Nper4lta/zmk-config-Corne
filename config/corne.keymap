@@ -25,6 +25,13 @@
             tapping-term-ms = <200>;
             bindings = <&kp C>, <&kp LG(C)>, <&kp LG(V)>;
         };
+        theTap: tap_The {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TAP_THE";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&kp T>, <&theMacro>;
+        };
     };
 };
 
