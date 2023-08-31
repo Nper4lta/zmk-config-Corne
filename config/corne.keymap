@@ -53,14 +53,6 @@
 							= <&kp T &kp H &kp E>
 							;
 			};
-			nrsMacro: nrsMacro {
-					label = "NRSMACRO";
-					compatible = "zmk,behavior-macro";
-					#binding-cells = <0>;
-					bindings
-							= <&kp n &kp p &kp N1 &kp N5 &kp N7>
-							;
-			};
 	};
 };
 
@@ -75,7 +67,15 @@
 							, <&macro_tap &kp C>
 							, <&macro_release &kp LGUI>
 							;
-		};
+			};
+			nrsMacro: nrsMacro {
+					label = "NRSMACRO";
+					compatible = "zmk,behavior-macro";
+					#binding-cells = <0>;
+					bindings
+							= <&kp n &kp p &kp N1 &kp N5 &kp N7>
+							;
+			};
 	};
 };
 
