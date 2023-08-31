@@ -8,6 +8,14 @@
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 
+#define COMBO(NAME, BINDINGS, LAYERS, KEYPOS)
+	combo_##NAME {
+		timeout-ms = <50>;
+		bindings = <BINDINGS>;
+		key-positions = <KEYPOS>;
+		layers = <LAYERS>;
+	};
+
 / {
     behaviors {
         td0: tap_dance_0 {
@@ -18,13 +26,13 @@
             bindings = <&kp C>, <&kp LG(C)>, <&kp LG(V)>;
         };
 
-				theTap: theDance {
-						compatible = "zmk,behavior-tap-dance";
-            label = "THE_DANCE";
-            #binding-cells = <0>;
-            tapping-term-ms = <200>;
-            bindings = <&kp t>, <&theMacro>;
-				};
+	theTap: theDance {
+		compatible = "zmk,behavior-tap-dance";
+            	label = "THE_DANCE";
+            	#binding-cells = <0>;
+            	tapping-term-ms = <200>;
+            	bindings = <&kp t>, <&theMacro>;
+	};
     };
 };
 
@@ -45,6 +53,7 @@
 					bindings
 							= <&kp T &kp H &kp E>
 							;
+		};
 	};
 };
 
@@ -81,12 +90,7 @@
 /{
 	combos{
 		compatible = "zmk,combos";
-		combo_something {
-			timeout-ms = <50>;
-			bindings = <&randMacro>;
-			key-positions = <0 1>;
-			layers = <3>;
-		};
+		COMBO(combo_something, &randMacro, 3, 0 1)
 	};
 };
 
