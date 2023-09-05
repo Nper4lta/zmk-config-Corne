@@ -32,11 +32,11 @@
             tapping-term-ms = <200>;
             bindings = <&kp T>, <&kp T &kp H &kp E>;
         };
-				Xcut: X_cut {
+				Xcut: X_tap {
 						compatible = "zmk,behavior-tap-dance";
-						label = "X_CUT";
+						label = "X_TAP";
 						#binding-cells = <0>;
-						tapping-terms-ms = <200>;
+						tapping-term-ms = <200>;
 						bindings = <&kp X>, <&kp LG(X)>, <&kp LG(V)>;
 				};
     };
