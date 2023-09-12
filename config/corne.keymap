@@ -32,27 +32,34 @@
             tapping-term-ms = <200>;
             bindings = <&kp T>, <&kp T &kp H &kp E>;
         };
-				Xcut: X_tap {
-						compatible = "zmk,behavior-tap-dance";
-						label = "X_TAP";
-						#binding-cells = <0>;
-						tapping-term-ms = <200>;
-						bindings = <&kp X>, <&kp LG(X)>, <&kp LG(V)>;
-				};
-				BTchange: BT_tap {
-						compatible = "zmk,behavior-tap-dance";
-						label = "BT_TAP";
-						#binding-cells = <0>;
-						tapping-term-ms = <200>;
-						bindings = <&bt BT_SEL 0>, <&bt BT_SEL 1>, <&bt BT_SEL 2>;
-				};
-				spaceTap: SPACE_tap {
-						compatible = "zmk,behavior-tap-dance";
-						label = "SPACE_TAP";
-						#binding-cells = <0>;
-						tapping-term-ms = <200>;
-						bindings = <&kp SPACE>, <&kp ENTER>;
-				};
+		Xcut: X_tap {
+			compatible = "zmk,behavior-tap-dance";
+			label = "X_TAP";
+			#binding-cells = <0>;
+			tapping-term-ms = <200>;
+			bindings = <&kp X>, <&kp LG(X)>, <&kp LG(V)>;
+		};
+		BTchange: BT_tap {
+			compatible = "zmk,behavior-tap-dance";
+			label = "BT_TAP";
+			#binding-cells = <0>;
+			tapping-term-ms = <200>;
+			bindings = <&bt BT_SEL 0>, <&bt BT_SEL 1>, <&bt BT_SEL 2>;
+		};
+		spaceTap: SPACE_tap {
+			compatible = "zmk,behavior-tap-dance";
+			label = "SPACE_TAP";
+			#binding-cells = <0>;
+			tapping-term-ms = <200>;
+			bindings = <&kp SPACE>, <&kp ENTER>;
+		};
+		numTap: NUM_tap {
+			compatible = "zmk,behavior-tap-dance";
+			label = "NUM_TAP";
+			#binding-cells = <0>;
+			tapping-term-ms = <200>;
+			bindings = <&kp SPACE>, <&tog 3>;
+		};
     };
 };
 
@@ -129,7 +136,7 @@
             &mt ESC TAB  &kp Q  &kp W     &kp E               &kp R        &kp T              &kp Y  &kp U      &kp I    &kp O      &kp P  &kp BSPC
          &lt 1 C_VOL_UP  &kp A  &kp S     &kp D               &kp F        &kp G              &kp H  &kp J      &kp K    &kp L   &kp SEMI   &kp SQT
 &mt LSHFT C_VOLUME_DOWN  &kp Z  &Xcut     &td0              &kp V        &kp B              &kp N  &kp M  &kp COMMA  &kp DOT  &kp SLASH   &kp ESC
-                                       &kp LGUI  &lt 1 LEFT_CONTROL  &lt 3 SPACE    &spaceTap  &lt 2 C_PP &kp LEFT_CONTROL
+                                       &kp LGUI  &lt 1 LEFT_CONTROL  &numTap    &spaceTap  &lt 2 C_PP &kp LEFT_CONTROL
             >;
         };
 
@@ -165,10 +172,10 @@
 
         numpad {
             bindings = <
-&trans  &trans                 &kp C_PREVIOUS   &kp C_PLAY_PAUSE  &kp C_NEXT  &trans     &trans  &kp N1        &kp N2  &kp N3   &mt KP_DIVIDE ASTRK                     &mt CARET BACKSPACE
+&trans  &trans                 &kp C_PREVIOUS   &kp C_PLAY_PAUSE  &kp C_NEXT  &trans     &trans  &kp N7        &kp N8  &kp N9   &mt KP_DIVIDE ASTRK                     &mt CARET BACKSPACE
 &trans  &trans  &mt C_VOLUME_DOWN C_VOLUME_UP  &kp K_APPLICATION      &trans  &trans     &trans  &kp N4        &kp N5  &kp N6  &mt KP_SUBTRACT PLUS  &mt RIGHT_PARENTHESIS LEFT_PARENTHESIS
-&trans  &trans                         &trans             &trans      &trans  &trans    &mt Y X  &kp N7        &kp N8  &kp N9            &kp PERIOD                               &kp EQUAL
-                                                          &trans      &trans  &trans     &trans  &trans  &kp NUMBER_0
+&trans  &trans                         &trans             &trans      &trans  &trans    &mt Y X  &kp N1        &kp N2  &kp N3            &kp PERIOD                               &kp EQUAL
+                                                          &trans      &trans  &tog 0     &trans  &trans  &kp NUMBER_0
             >;
         };
     };
