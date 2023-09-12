@@ -31,7 +31,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TAP_THE";
             #binding-cells = <0>;
-            tapping-term-ms = <100>;
+            tapping-term-ms = <300>;
             bindings = <&kp T>, <&theMacro>;
         };
 		Xcut: X_tap {
