@@ -34,13 +34,6 @@
             tapping-term-ms = <200>;
             bindings = <&kp V>, <&kp LG(V)>, <&kp LG(C)>, <&kp LG(X)>;
         };
-        theTap: tap_The {
-            compatible = "zmk,behavior-tap-dance";
-            label = "TAP_THE";
-            #binding-cells = <0>;
-            tapping-term-ms = <300>;
-            bindings = <&kp T>, <&theMacro>;
-        };
 		Xcut: X_tap {
 			compatible = "zmk,behavior-tap-dance";
 			label = "X_TAP";
@@ -142,7 +135,7 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-            &mt ESC TAB  &kp Q  &kp W     &kp E               &kp R        &theTap              &kp Y  &kp U      &kp I    &kp O      &kp P  &kp BSPC
+            &mt ESC TAB  &kp Q  &kp W     &kp E               &kp R        &kp T             &kp Y  &kp U      &kp I    &kp O      &kp P  &kp BSPC
          &lt 1 C_VOL_UP  &kp A  &kp S     &kp D               &kp F        &kp G              &kp H  &kp J      &kp K    &kp L   &kp SEMI   &kp SQT
 &mt LSHFT C_VOLUME_DOWN  &kp Z  &Xcut     &td0              &pastetap        &kp B              &kp N  &kp M  &kp COMMA  &kp DOT  &kp SLASH   &kp ESC
                                        &kp LGUI  &lt 1 LEFT_CONTROL  &numTap    &spaceTap  &lt 2 C_PP &kp LEFT_CONTROL
